@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { v4 as uuidv4 } from 'uuid';
 
-export function HorizontalScroll({ songs, NoImg }) {
+export function HorizontalScroll({ songs, NoImg, description }) {
   const [uniqueId, setUniqueId] = useState('');
 
     useEffect(() => {
@@ -30,21 +30,30 @@ export function HorizontalScroll({ songs, NoImg }) {
           alt=''
           style={{ display: NoImg ? 'none' : 'block' }}
         />
-        <div className='relative flex items-center'>
+        <p class = 'text-xl '>{description}</p>
+        <div 
+        className='item_container'
+        //className='relative flex items-center overflow-hidden'
+        >
           <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
           <div
+            type = ''
             id={uniqueId}
-            className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+            className='items_many'
+            //className='w-full h-full overflow-x-scroll -webkite whitespace-nowrap scroll-smooth '
           >
             {songs.map(item => (
               <img
-                className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
+                className='item'
+                // className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-2xl'
                 src={item.img}
                 alt='/'
               />
             ))}
           </div>
-          <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideRight} size={40} />
+          <MdChevronRight
+          className='opacity-50 cursor-pointer hover:opacity-100' 
+          onClick={slideRight} size={40} />
         </div>
       </>
     );

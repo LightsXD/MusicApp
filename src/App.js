@@ -9,8 +9,8 @@ function App() {
   return (
     <>
     <Navbar/>
-    <HorizontalScroll songs = {data} />
-    <HorizontalScroll songs = {data} NoImg={true}/>
+    <HorizontalScroll songs = {data} description={"Recently Played"} />
+    <HorizontalScroll songs = {data} NoImg={true} description={"Song Your Might Like"}/>
     </>
   );
 }
