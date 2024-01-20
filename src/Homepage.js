@@ -2,8 +2,6 @@ import React from "react";
 import { Navbar} from './Navbar';
 import { HorizontalScroll} from './HorizontalScroll';
 import {data} from "./mockData"
-import './App.css';
-import './CSS/navbar.css';
 
 export function Homepage(){
     return(
