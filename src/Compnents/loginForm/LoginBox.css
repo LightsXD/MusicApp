@@ -1,0 +1,77 @@
+.loginbox { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: sans-serif; 
+  line-height: 1.5; 
+  min-height: 100vh;
+  flex-direction: column; 
+  margin: 0;
+  background-image: url('./loginbg.jpg'); 
+  background-size: 100%;
+  background-repeat: no-repeat;   
+} 
+
+.main { 
+  background-color: #FBEACD4a; 
+  margin-left: 50%;
+  border-radius: 15px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  padding: 10px 20px; 
+  transition: transform 0.2s; 
+  width: 300px; 
+  align-items: center; 
+} 
+
+.loginlogo{
+  margin: auto;
+  width: 50%;
+  height: 50%px;
+  padding-top: 30px;
+}
+
+.label { 
+  display: block; 
+  width: 100%; 
+  margin-top: 10px; 
+  margin-bottom: 5px; 
+  text-align: left; 
+  color: #ffffff; 
+  font-weight: bold; 
+} 
+
+
+.LoginBoxinput { 
+  display: block; 
+  width: 100%; 
+  margin-bottom: 15px; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  border: none; 
+}
+
+.Submitbutton { 
+  padding: 15px; 
+  border-radius: 10px; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  border: none; 
+  color: white; 
+  cursor: pointer; 
+  background-color: #FBEACDc0; 
+  width: 100%; 
+  font-size: 16px; 
+}
+.Submitbutton:hover{
+  background-color: #510000c0;
+} 
+.link{
+  color: #510000;
+} 
+.wrap { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}

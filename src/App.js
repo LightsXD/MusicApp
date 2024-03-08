@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react"
 import React from "react";
-import { LoginForm } from "./loginForm/LoginForm";
+import { LoginForm } from "./Compnents/loginForm/LoginForm";
 import { Homepage } from "./Homepage";
-
+import './styles/index.css';
+import './styles/customize-progress-bar.css';
 function App() {
 
   return (
     <>
-    <LoginForm/>
+    
+    {/* <LoginForm/> */}
+    <Homepage/>
     </>
   );
 }

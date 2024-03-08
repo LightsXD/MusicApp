@@ -1,6 +1,7 @@
 import React from "react";
-import { Navbar} from './Navbar';
-import { HorizontalScroll} from './HorizontalScroll';
+import { Navbar} from './Compnents/NavBar/Navbar';
+import { HorizontalScroll} from './Compnents/ItemTray/HorizontalScroll';
+import AudioPlayer from "./Compnents/AudioPlayer/AudioPlayer";
 import {data} from "./mockData"
 
 export function Homepage(){
@@ -9,6 +10,7 @@ export function Homepage(){
     <Navbar/>
     <HorizontalScroll songs = {data} description={"Recently Played"} />
     <HorizontalScroll songs = {data} NoImg={true} description={"Song Your Might Like"}/>
+    <AudioPlayer></AudioPlayer>
     </>
     )
 }

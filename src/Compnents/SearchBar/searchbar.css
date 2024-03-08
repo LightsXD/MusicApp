@@ -1,0 +1,17 @@
+.search{
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.592);
+    width:20%;
+    height: 75%;
+    border-radius: 25px;
+    outline: none;
+    /* display: flex; */
+    }
+
+    input {
+        position: relative;
+        top: 8px;
+    }
